@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/entrylayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/det_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_toEndOf="@+id/pouce"
+        android:layout_toRightOf="@+id/pouce"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/det_addresse"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/det_name"
+        android:layout_alignStart="@+id/det_name"
+        android:layout_below="@+id/det_name"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+
+    <TextView
+        android:id="@+id/det_nbeleve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/det_addresse"
+        android:layout_alignStart="@+id/det_addresse"
+        android:layout_below="@+id/det_addresse"
+        android:text="@string/elevenumber"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/det_addresse"
+        android:layout_toEndOf="@+id/det_addresse"
+        android:layout_toRightOf="@+id/det_addresse"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/pouce"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:padding="10dp"
+        app:srcCompat="@drawable/ok" />
+
+    <ImageView
+        android:id="@+id/list_delet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/list_tomap"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_toEndOf="@+id/list_tomap"
+        android:layout_toRightOf="@+id/list_tomap"
+        app:srcCompat="@drawable/delete" />
+
+    <ImageView
+        android:id="@+id/list_tomap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/det_addresse"
+        android:layout_marginLeft="55dp"
+        android:layout_marginStart="55dp"
+        android:layout_toEndOf="@+id/det_nbeleve"
+        android:layout_toRightOf="@+id/det_nbeleve"
+        app:srcCompat="@drawable/maplittle" />
+
+</RelativeLayout>

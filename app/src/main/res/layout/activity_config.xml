@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ynov.bsc.Activies.ConfigActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/publicbutton"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/publ"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <ImageView
+            android:id="@+id/privatebutton"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/priv"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+    </LinearLayout>
+</RelativeLayout>

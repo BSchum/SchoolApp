@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.brice.messagemanager">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Ecole"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.ynov.bsc.Activies.LoginActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_auth"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ynov.bsc.Activies.MenuActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ynov.bsc.Activies.ListEntryActivity"
+            android:configChanges="orientation"
+            android:parentActivityName="com.ynov.bsc.Activies.MenuActivity"
+            android:label="Listes des écoles"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ynov.bsc.Activies.DetailledActivity"
+            android:configChanges="orientation"
+            android:parentActivityName="com.ynov.bsc.Activies.ListEntryActivity"
+            android:screenOrientation="portrait"
+            android:label="Détail"/>
+        <activity
+            android:name="com.ynov.bsc.Activies.AddEntryActivity"
+            android:configChanges="orientation"
+            android:label="Création"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA9f6aVq-t4WSjq-6dFob4Gdb6hnBqI5DE" />
+
+        <activity
+            android:name="com.ynov.bsc.Activies.MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:parentActivityName="com.ynov.bsc.Activies.MenuActivity" />
+        <activity android:name="com.ynov.bsc.Activies.ConfigActivity"
+            android:parentActivityName="com.ynov.bsc.Activies.MenuActivity"
+            android:label="Configuration"></activity>
+    </application>
+
+</manifest>

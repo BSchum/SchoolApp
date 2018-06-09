@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ynov.bsc.Activies.DetailledActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/det_name_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nom"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <EditText
+                android:id="@+id/det_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name" />
+
+            <TextView
+                android:id="@+id/det_address_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Addresse"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <EditText
+                android:id="@+id/det_addresse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="addresse" />
+
+            <TextView
+                android:id="@+id/det_zipcode_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Code Postal"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <EditText
+                android:id="@+id/det_zipcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Code Postal" />
+
+            <TextView
+                android:id="@+id/det_city_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ville"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <EditText
+                android:id="@+id/det_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Ville" />
+
+            <TextView
+                android:id="@+id/det_horaire_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Horaire"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <EditText
+                android:id="@+id/det_openings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Horaire" />
+
+            <TextView
+                android:id="@+id/det_phone_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Telephone"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <EditText
+                android:id="@+id/det_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Téléphone" />
+
+            <TextView
+                android:id="@+id/det_email_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="E-Mail"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <EditText
+                android:id="@+id/det_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="E-Mail" />
+
+            <TextView
+                android:id="@+id/det_latitude_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Latitude"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <EditText
+                android:id="@+id/det_lat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Latitude" />
+
+            <TextView
+                android:id="@+id/det_longitude_title8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Longitude"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <EditText
+                android:id="@+id/det_long"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Longitude" />
+
+            <TextView
+                android:id="@+id/det_nbstudent_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre d'étudiant"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <EditText
+                android:id="@+id/det_nbstudent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Nombre d'étudiant" />
+
+            <TextView
+                android:id="@+id/det_status_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <Spinner
+                android:id="@+id/status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/det_validate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Valider" />
+
+                <Button
+                    android:id="@+id/det_annuler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Annuler" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
